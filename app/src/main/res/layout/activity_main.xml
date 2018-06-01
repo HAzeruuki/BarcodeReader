@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity"
+    android:id="@+id/activity_main">
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/appbar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button_scan"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:onClick="onClickListener1"
+        android:text="@string/button_label"
+        android:textColor="@color/colorPrimaryDark"
+        tools:ignore="RelativeOverlap" />
+
+    <Button
+        android:id="@+id/button_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="74dp"
+        android:onClick="onClickListener2"
+        android:text="@string/scan_button_label"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="@string/null_value"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="140dp"
+        android:text="@string/null_value"
+        android:visibility="invisible"
+        android:layout_alignLeft="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView_barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button"
+        android:layout_below="@+id/textView_name"
+        android:text="@string/null_value"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button"
+        android:layout_below="@+id/textView_barcode"
+        android:text="@string/null_value"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="@string/price_button_label"
+        android:onClick="onClickListener3"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView_name_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_scan"
+        android:layout_alignTop="@+id/textView_name"
+        android:text="@string/name"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView_barcode_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_scan"
+        android:layout_below="@+id/textView_name"
+        android:text="@string/barcode"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView_price_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_scan"
+        android:layout_below="@+id/textView_barcode"
+        android:text="@string/price"
+        android:visibility="invisible" />
+
+</RelativeLayout>

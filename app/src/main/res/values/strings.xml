@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Barcode Reader</string>
+    <string name="button_label">PICK</string>
+    <string name="detector_error">Unable to set up detector</string>
+    <string name="permission_granted">Permission granted</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="scan_button_label">SCAN</string>
+    <string name="null_value" translatable="false"> </string>
+    <string name="price_button_label">CHANGE PRICE</string>
+    <string name="barcode_error">Unable to detect barcode</string>
+    <string name="name">Name</string>
+    <string name="barcode">Barcode</string>
+    <string name="price">Price</string>
+    <string name="dialog_title">Change price</string>
+    <string name="dialog_message">What is the new price?</string>
+    <string name="dialog_button">Submit</string>
+    <string name="result_empty">0000</string>
+</resources>
